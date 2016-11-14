@@ -1,12 +1,12 @@
 {
-  "name": "cheesylights",
+  "name": "cheesylights2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "budo src/index.js -- -t babelify",
-    "dev": "budo src/index.js --live -- -t babelify",
-    "build": "rollup -c && uglifyjs bui/index.js -cm -o bui/index.min.js"
+    "start": "budo ./src/index.js -- -t babelify",
+    "develop": "budo ./src/index.js --live -- -t babelify",
+    "build": "rollup -c && uglifyjs ./bui/index.js -cm -o ./bui/index.min.js"
   },
   "author": "Florian Maxim Brüggemann",
   "license": "MIT",
@@ -16,5 +16,8 @@
     "budo": "^9.2.1",
     "rollup": "^0.36.3",
     "uglify-js": "^2.6.0"
+  },
+  "dependencies": {
+    "budo": "^9.2.1"
   }
 }
