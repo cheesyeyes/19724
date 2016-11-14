@@ -40117,19 +40117,6 @@ function animate() {
 
     requestAnimationFrame( animate );
 
-    lightContainer.rotation.x += Math.sin(TIME)*.005;
-    lightContainer.rotation.y += -Math.cos(TIME)*.005;
-    lightContainer.rotation.z -= Math.sin(TIME)*.015;
-
-
-    mesh.position.y = Math.sin(TIME)+.5;
-    mesh.position.x = Math.cos(TIME)-.6;
-    mesh.position.z = Math.sin(TIME)+.9;
-
-
-    camera.rotation.z = Math.sin(TIME);
-    camera.rotation.y = Math.sin(TIME);
-    camera.rotation.z = Math.cos(TIME);
 
     light1.intensity = Math.sin(CLOCK.getElapsedTime()+.5)*10;
     light2.intensity = Math.sin(CLOCK.getElapsedTime()-5)*10;
