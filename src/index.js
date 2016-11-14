@@ -88,6 +88,7 @@ function animate() {
     var TIME = CLOCK.getElapsedTime();
 
     requestAnimationFrame( animate );
+/*
 
     lightContainer.rotation.x += Math.sin(TIME)/TIME;
     lightContainer.rotation.y += -Math.cos(TIME)/TIME;
@@ -98,15 +99,17 @@ function animate() {
     mesh.rotation.x += Math.cos(TIME)+TIME;
     mesh.rotation.z += Math.sin(TIME)+TIME;
 
-    /*
+    
     mesh.scale.y = Math.sin(TIME+TIME);
     mesh.scale.x = Math.cos(TIME+TIME);
     mesh.scale.z = Math.sin(TIME+TIME);
-    */
+
 
     camera.rotation.z = Math.sin(TIME)-TIME;
     camera.rotation.y = Math.sin(TIME)-TIME;
     camera.rotation.z = Math.cos(TIME)-TIME;
+
+*/
 
     light1.intensity = Math.sin(CLOCK.getElapsedTime()+.5)*10
     light2.intensity = Math.sin(CLOCK.getElapsedTime()-5)*10
